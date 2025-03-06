@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websiteku</title>
+    <link rel="stylesheet" href="header.css">
+    <style>
+        .content{
+            flex-direction: row;
+            display: flex;
+        }
+        .content > div {
+            display: flex;
+            flex: 1;
+            align-content: center;
+            justify-content: center;
+        }
+        .label{
+            display: flex;
+            flex: 0.5;
+            align-items:end;
+            justify-items: end;
+            flex-direction: column;
+            gap: 35px;
+        }
+        .input{
+            display: flex;
+            flex: 1;
+            align-items: start;
+            justify-items: start;
+            flex-direction: column;
+            gap: 29px;
+        }
+        .form > div {
+            margin: 5px 5px 5px 5px ;
+        }
+        input[type="text"],
+        input[type="date"]
+        {
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .radio-group{
+            display: flex;
+            flex-direction: row;
+        }
+        footer{
+            text-align: right;
+            margin-top: 45px;
+        }
+        hr{
+            margin-top: 50px;
+        }
+        table, td, th{
+            border: 1px solid black;
+        }
+        table{
+            border-collapse: collapse;
+            border-spacing: 10px;
+            margin: 20px;
+        }
+        th{
+            text-align: center;
+            padding: 15px;
+            margin: 10px;
+        }
+        td{
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .head{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="about">About</div>
+        <div class="logout">Logout</div>
+    </nav>
+    <header class="head">
+        <h1>Form Belajar</h1>
+        <p>Ini adalah website latihan pertama</p>
+    </header>
+    <main class="content">
+        <div class="form">
+            <div class="label">
+                <label for="text">Nama :</label>
+                <label for="text">Tanggal Lahir :</label> 
+                <label for="text">Jenis Kelamin :</label> 
+                <label for="text">Pesan :</label>
+                <label for="img">Profile Pict :</label>
+            </div>
+            <div class="input">
+                <input type="text" name="nama" id="name"> 
+                <input type="date" name="ttg" id="ttg"> 
+                <div class="radio-group">
+                    <label class="radio"><input type="radio" id="gender" name="gender" value="Laki-Laki"> Laki-Laki </label>
+                    <label class="radio"><input type="radio" id="gender" name="gender" value="Perempuan"> Perempuan</label>
+                </div>
+                <textarea name="pesan" id="msg"></textarea>
+                <input type="file" name="profilepict" id="pp" accept=".png, .jpg, .jpeg">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </div>
+
+        <div class="table">
+            <table>
+                <caption>Tabel</caption>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Hapus</th>
+                </tr>
+                <tr>
+                    <td>Sealti Lena</td>
+                    <td>10/9/2002</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button" class="button">Hapus</button></td>
+                </tr>
+                <tr>
+                    <td>alamak</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button" class="button">Hapus</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <p>Revou</p>
+    </footer>
+</body>
+</html>
